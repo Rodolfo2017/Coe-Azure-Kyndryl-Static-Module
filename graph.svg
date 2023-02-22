@@ -1,0 +1,457 @@
+digraph {
+	compound = "true"
+	newrank = "true"
+	subgraph "root" {
+		"[root] module.azure_container_registry.azurerm_container_registry.coe_azure_container_registry (expand)" [label = "module.azure_container_registry.azurerm_container_registry.coe_azure_container_registry", shape = "box"]
+		"[root] module.azure_cosmosdb.azurerm_cosmosdb_account.coe_azure_cosmosdb_account (expand)" [label = "module.azure_cosmosdb.azurerm_cosmosdb_account.coe_azure_cosmosdb_account", shape = "box"]
+		"[root] module.azure_key_vault.azurerm_key_vault.coe_azure_key_vault (expand)" [label = "module.azure_key_vault.azurerm_key_vault.coe_azure_key_vault", shape = "box"]
+		"[root] module.azure_key_vault.data.azurerm_client_config.current (expand)" [label = "module.azure_key_vault.data.azurerm_client_config.current", shape = "box"]
+		"[root] module.azure_kubernetes.azurerm_kubernetes_cluster.coe_azure_kubernetes_cluster (expand)" [label = "module.azure_kubernetes.azurerm_kubernetes_cluster.coe_azure_kubernetes_cluster", shape = "box"]
+		"[root] module.azure_kubernetes.azurerm_private_dns_zone.coe_azure_kubernetes_private_dns_zone (expand)" [label = "module.azure_kubernetes.azurerm_private_dns_zone.coe_azure_kubernetes_private_dns_zone", shape = "box"]
+		"[root] module.azure_kubernetes.azurerm_role_assignment.coe_azure_kubernetes_role_assignment (expand)" [label = "module.azure_kubernetes.azurerm_role_assignment.coe_azure_kubernetes_role_assignment", shape = "box"]
+		"[root] module.azure_kubernetes.azurerm_user_assigned_identity.coe_azure_kubernetes_user_assigned_identity (expand)" [label = "module.azure_kubernetes.azurerm_user_assigned_identity.coe_azure_kubernetes_user_assigned_identity", shape = "box"]
+		"[root] module.azure_networking.azurerm_nat_gateway.coe_azure_nat_gateway (expand)" [label = "module.azure_networking.azurerm_nat_gateway.coe_azure_nat_gateway", shape = "box"]
+		"[root] module.azure_networking.azurerm_nat_gateway_public_ip_association.coe_azure_nat_gateway_with_public_ip_association (expand)" [label = "module.azure_networking.azurerm_nat_gateway_public_ip_association.coe_azure_nat_gateway_with_public_ip_association", shape = "box"]
+		"[root] module.azure_networking.azurerm_public_ip.coe_azure_public_ip (expand)" [label = "module.azure_networking.azurerm_public_ip.coe_azure_public_ip", shape = "box"]
+		"[root] module.azure_networking.azurerm_public_ip_prefix.coe_azure_public_ip_prefix (expand)" [label = "module.azure_networking.azurerm_public_ip_prefix.coe_azure_public_ip_prefix", shape = "box"]
+		"[root] module.azure_networking.azurerm_subnet.coe_azure_private_subnet (expand)" [label = "module.azure_networking.azurerm_subnet.coe_azure_private_subnet", shape = "box"]
+		"[root] module.azure_networking.azurerm_subnet.coe_azure_public_subnet (expand)" [label = "module.azure_networking.azurerm_subnet.coe_azure_public_subnet", shape = "box"]
+		"[root] module.azure_networking.azurerm_subnet_nat_gateway_association.coe_azure_nat_gateway_with_subnet_association (expand)" [label = "module.azure_networking.azurerm_subnet_nat_gateway_association.coe_azure_nat_gateway_with_subnet_association", shape = "box"]
+		"[root] module.azure_networking.azurerm_subnet_network_security_group_association.coe_azure_subnet_network_security_group_association (expand)" [label = "module.azure_networking.azurerm_subnet_network_security_group_association.coe_azure_subnet_network_security_group_association", shape = "box"]
+		"[root] module.azure_networking.azurerm_virtual_network.coe_azure_vnet (expand)" [label = "module.azure_networking.azurerm_virtual_network.coe_azure_vnet", shape = "box"]
+		"[root] module.azure_security_group.azurerm_network_security_group.network_security_group (expand)" [label = "module.azure_security_group.azurerm_network_security_group.network_security_group", shape = "box"]
+		"[root] module.azure_storage_account.azurerm_storage_account.coe_azure_storage_account (expand)" [label = "module.azure_storage_account.azurerm_storage_account.coe_azure_storage_account", shape = "box"]
+		"[root] provider[\"registry.terraform.io/hashicorp/azurerm\"]" [label = "provider[\"registry.terraform.io/hashicorp/azurerm\"]", shape = "diamond"]
+		"[root] var.azure_container_registry_admin_enabled" [label = "var.azure_container_registry_admin_enabled", shape = "note"]
+		"[root] var.azure_container_registry_georeplication_location_1" [label = "var.azure_container_registry_georeplication_location_1", shape = "note"]
+		"[root] var.azure_container_registry_georeplication_zone_redundancy_enabled_1" [label = "var.azure_container_registry_georeplication_zone_redundancy_enabled_1", shape = "note"]
+		"[root] var.azure_container_registry_name" [label = "var.azure_container_registry_name", shape = "note"]
+		"[root] var.azure_container_registry_sku" [label = "var.azure_container_registry_sku", shape = "note"]
+		"[root] var.azure_cosmosdb_account_capabilities_name_1" [label = "var.azure_cosmosdb_account_capabilities_name_1", shape = "note"]
+		"[root] var.azure_cosmosdb_account_capabilities_name_2" [label = "var.azure_cosmosdb_account_capabilities_name_2", shape = "note"]
+		"[root] var.azure_cosmosdb_account_capabilities_name_3" [label = "var.azure_cosmosdb_account_capabilities_name_3", shape = "note"]
+		"[root] var.azure_cosmosdb_account_capabilities_name_4" [label = "var.azure_cosmosdb_account_capabilities_name_4", shape = "note"]
+		"[root] var.azure_cosmosdb_account_consistency_level" [label = "var.azure_cosmosdb_account_consistency_level", shape = "note"]
+		"[root] var.azure_cosmosdb_account_enable_automatic_failover" [label = "var.azure_cosmosdb_account_enable_automatic_failover", shape = "note"]
+		"[root] var.azure_cosmosdb_account_geo_location_failover_priority_1" [label = "var.azure_cosmosdb_account_geo_location_failover_priority_1", shape = "note"]
+		"[root] var.azure_cosmosdb_account_geo_location_failover_priority_2" [label = "var.azure_cosmosdb_account_geo_location_failover_priority_2", shape = "note"]
+		"[root] var.azure_cosmosdb_account_geo_location_location_1" [label = "var.azure_cosmosdb_account_geo_location_location_1", shape = "note"]
+		"[root] var.azure_cosmosdb_account_geo_location_location_2" [label = "var.azure_cosmosdb_account_geo_location_location_2", shape = "note"]
+		"[root] var.azure_cosmosdb_account_kind" [label = "var.azure_cosmosdb_account_kind", shape = "note"]
+		"[root] var.azure_cosmosdb_account_max_interval_in_seconds" [label = "var.azure_cosmosdb_account_max_interval_in_seconds", shape = "note"]
+		"[root] var.azure_cosmosdb_account_max_staleness_prefix" [label = "var.azure_cosmosdb_account_max_staleness_prefix", shape = "note"]
+		"[root] var.azure_cosmosdb_account_name" [label = "var.azure_cosmosdb_account_name", shape = "note"]
+		"[root] var.azure_cosmosdb_account_offer_type" [label = "var.azure_cosmosdb_account_offer_type", shape = "note"]
+		"[root] var.azure_key_vault_access_policy_key_permissions" [label = "var.azure_key_vault_access_policy_key_permissions", shape = "note"]
+		"[root] var.azure_key_vault_access_policy_secret_permissions" [label = "var.azure_key_vault_access_policy_secret_permissions", shape = "note"]
+		"[root] var.azure_key_vault_access_policy_storage_permissions" [label = "var.azure_key_vault_access_policy_storage_permissions", shape = "note"]
+		"[root] var.azure_key_vault_enabled_for_disk_encryption" [label = "var.azure_key_vault_enabled_for_disk_encryption", shape = "note"]
+		"[root] var.azure_key_vault_name" [label = "var.azure_key_vault_name", shape = "note"]
+		"[root] var.azure_key_vault_purge_protection_enabled" [label = "var.azure_key_vault_purge_protection_enabled", shape = "note"]
+		"[root] var.azure_key_vault_sku_name" [label = "var.azure_key_vault_sku_name", shape = "note"]
+		"[root] var.azure_key_vault_soft_delete_retention_days" [label = "var.azure_key_vault_soft_delete_retention_days", shape = "note"]
+		"[root] var.azure_kubernetes_cluster_default_node_pool_enable_auto_scaling" [label = "var.azure_kubernetes_cluster_default_node_pool_enable_auto_scaling", shape = "note"]
+		"[root] var.azure_kubernetes_cluster_default_node_pool_max_count" [label = "var.azure_kubernetes_cluster_default_node_pool_max_count", shape = "note"]
+		"[root] var.azure_kubernetes_cluster_default_node_pool_min_count" [label = "var.azure_kubernetes_cluster_default_node_pool_min_count", shape = "note"]
+		"[root] var.azure_kubernetes_cluster_default_node_pool_name" [label = "var.azure_kubernetes_cluster_default_node_pool_name", shape = "note"]
+		"[root] var.azure_kubernetes_cluster_default_node_pool_node_count" [label = "var.azure_kubernetes_cluster_default_node_pool_node_count", shape = "note"]
+		"[root] var.azure_kubernetes_cluster_default_node_pool_type" [label = "var.azure_kubernetes_cluster_default_node_pool_type", shape = "note"]
+		"[root] var.azure_kubernetes_cluster_default_node_pool_vm_size" [label = "var.azure_kubernetes_cluster_default_node_pool_vm_size", shape = "note"]
+		"[root] var.azure_kubernetes_cluster_dns_prefix" [label = "var.azure_kubernetes_cluster_dns_prefix", shape = "note"]
+		"[root] var.azure_kubernetes_cluster_identity_type" [label = "var.azure_kubernetes_cluster_identity_type", shape = "note"]
+		"[root] var.azure_kubernetes_cluster_name" [label = "var.azure_kubernetes_cluster_name", shape = "note"]
+		"[root] var.azure_kubernetes_cluster_private_cluster_enabled" [label = "var.azure_kubernetes_cluster_private_cluster_enabled", shape = "note"]
+		"[root] var.azure_kubernetes_private_dns_zone_name" [label = "var.azure_kubernetes_private_dns_zone_name", shape = "note"]
+		"[root] var.azure_kubernetes_role_assignment_role_definition_name" [label = "var.azure_kubernetes_role_assignment_role_definition_name", shape = "note"]
+		"[root] var.azure_kubernetes_user_assigned_identity_name" [label = "var.azure_kubernetes_user_assigned_identity_name", shape = "note"]
+		"[root] var.azure_nat_gateway_idle_timeout_in_minutes" [label = "var.azure_nat_gateway_idle_timeout_in_minutes", shape = "note"]
+		"[root] var.azure_nat_gateway_name" [label = "var.azure_nat_gateway_name", shape = "note"]
+		"[root] var.azure_nat_gateway_sku_name" [label = "var.azure_nat_gateway_sku_name", shape = "note"]
+		"[root] var.azure_network_security_group_name" [label = "var.azure_network_security_group_name", shape = "note"]
+		"[root] var.azure_network_security_group_name_nsg_rules_inbound" [label = "var.azure_network_security_group_name_nsg_rules_inbound", shape = "note"]
+		"[root] var.azure_network_security_group_name_nsg_rules_outbound" [label = "var.azure_network_security_group_name_nsg_rules_outbound", shape = "note"]
+		"[root] var.azure_public_ip_name" [label = "var.azure_public_ip_name", shape = "note"]
+		"[root] var.azure_public_ip_name_allocation_method" [label = "var.azure_public_ip_name_allocation_method", shape = "note"]
+		"[root] var.azure_public_ip_prefix_length" [label = "var.azure_public_ip_prefix_length", shape = "note"]
+		"[root] var.azure_public_ip_prefix_name" [label = "var.azure_public_ip_prefix_name", shape = "note"]
+		"[root] var.azure_public_ip_sku" [label = "var.azure_public_ip_sku", shape = "note"]
+		"[root] var.azure_public_ip_sku_tier" [label = "var.azure_public_ip_sku_tier", shape = "note"]
+		"[root] var.azure_resource_group_location" [label = "var.azure_resource_group_location", shape = "note"]
+		"[root] var.azure_resource_group_name" [label = "var.azure_resource_group_name", shape = "note"]
+		"[root] var.azure_storage_access_tier" [label = "var.azure_storage_access_tier", shape = "note"]
+		"[root] var.azure_storage_account_account_kind" [label = "var.azure_storage_account_account_kind", shape = "note"]
+		"[root] var.azure_storage_account_blob_properties_delete_retention_policy_days" [label = "var.azure_storage_account_blob_properties_delete_retention_policy_days", shape = "note"]
+		"[root] var.azure_storage_account_blob_properties_versioning_enabled" [label = "var.azure_storage_account_blob_properties_versioning_enabled", shape = "note"]
+		"[root] var.azure_storage_account_enable_https_traffic_only" [label = "var.azure_storage_account_enable_https_traffic_only", shape = "note"]
+		"[root] var.azure_storage_account_min_tls_version" [label = "var.azure_storage_account_min_tls_version", shape = "note"]
+		"[root] var.azure_storage_account_name" [label = "var.azure_storage_account_name", shape = "note"]
+		"[root] var.azure_storage_account_network_rules_default_action" [label = "var.azure_storage_account_network_rules_default_action", shape = "note"]
+		"[root] var.azure_storage_account_network_rules_ip_rules" [label = "var.azure_storage_account_network_rules_ip_rules", shape = "note"]
+		"[root] var.azure_storage_account_replication_type" [label = "var.azure_storage_account_replication_type", shape = "note"]
+		"[root] var.azure_storage_account_tier" [label = "var.azure_storage_account_tier", shape = "note"]
+		"[root] var.azure_vnet_address_space" [label = "var.azure_vnet_address_space", shape = "note"]
+		"[root] var.azure_vnet_dns_servers" [label = "var.azure_vnet_dns_servers", shape = "note"]
+		"[root] var.azure_vnet_name" [label = "var.azure_vnet_name", shape = "note"]
+		"[root] var.azure_vnet_private_subnet_address_prefixes" [label = "var.azure_vnet_private_subnet_address_prefixes", shape = "note"]
+		"[root] var.azure_vnet_private_subnet_name" [label = "var.azure_vnet_private_subnet_name", shape = "note"]
+		"[root] var.azure_vnet_public_subnet_address_prefixes" [label = "var.azure_vnet_public_subnet_address_prefixes", shape = "note"]
+		"[root] var.azure_vnet_public_subnet_name" [label = "var.azure_vnet_public_subnet_name", shape = "note"]
+		"[root] var.env" [label = "var.env", shape = "note"]
+		"[root] var.primary_region" [label = "var.primary_region", shape = "note"]
+		"[root] var.project" [label = "var.project", shape = "note"]
+		"[root] var.secondary_region" [label = "var.secondary_region", shape = "note"]
+		"[root] local.tags (expand)" -> "[root] var.env"
+		"[root] local.tags (expand)" -> "[root] var.project"
+		"[root] module.azure_container_registry (close)" -> "[root] module.azure_container_registry.azurerm_container_registry.coe_azure_container_registry (expand)"
+		"[root] module.azure_container_registry.azurerm_container_registry.coe_azure_container_registry (expand)" -> "[root] module.azure_container_registry.var.azure_container_registry_admin_enabled (expand)"
+		"[root] module.azure_container_registry.azurerm_container_registry.coe_azure_container_registry (expand)" -> "[root] module.azure_container_registry.var.azure_container_registry_georeplication_location_1 (expand)"
+		"[root] module.azure_container_registry.azurerm_container_registry.coe_azure_container_registry (expand)" -> "[root] module.azure_container_registry.var.azure_container_registry_georeplication_zone_redundancy_enabled_1 (expand)"
+		"[root] module.azure_container_registry.azurerm_container_registry.coe_azure_container_registry (expand)" -> "[root] module.azure_container_registry.var.azure_container_registry_name (expand)"
+		"[root] module.azure_container_registry.azurerm_container_registry.coe_azure_container_registry (expand)" -> "[root] module.azure_container_registry.var.azure_container_registry_sku (expand)"
+		"[root] module.azure_container_registry.azurerm_container_registry.coe_azure_container_registry (expand)" -> "[root] module.azure_container_registry.var.azure_resource_group_location (expand)"
+		"[root] module.azure_container_registry.azurerm_container_registry.coe_azure_container_registry (expand)" -> "[root] module.azure_container_registry.var.azure_resource_group_name (expand)"
+		"[root] module.azure_container_registry.azurerm_container_registry.coe_azure_container_registry (expand)" -> "[root] module.azure_container_registry.var.tags (expand)"
+		"[root] module.azure_container_registry.azurerm_container_registry.coe_azure_container_registry (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/azurerm\"]"
+		"[root] module.azure_container_registry.var.azure_container_registry_admin_enabled (expand)" -> "[root] module.azure_container_registry (expand)"
+		"[root] module.azure_container_registry.var.azure_container_registry_admin_enabled (expand)" -> "[root] var.azure_container_registry_admin_enabled"
+		"[root] module.azure_container_registry.var.azure_container_registry_georeplication_location_1 (expand)" -> "[root] module.azure_container_registry (expand)"
+		"[root] module.azure_container_registry.var.azure_container_registry_georeplication_location_1 (expand)" -> "[root] var.azure_container_registry_georeplication_location_1"
+		"[root] module.azure_container_registry.var.azure_container_registry_georeplication_zone_redundancy_enabled_1 (expand)" -> "[root] module.azure_container_registry (expand)"
+		"[root] module.azure_container_registry.var.azure_container_registry_georeplication_zone_redundancy_enabled_1 (expand)" -> "[root] var.azure_container_registry_georeplication_zone_redundancy_enabled_1"
+		"[root] module.azure_container_registry.var.azure_container_registry_name (expand)" -> "[root] module.azure_container_registry (expand)"
+		"[root] module.azure_container_registry.var.azure_container_registry_name (expand)" -> "[root] var.azure_container_registry_name"
+		"[root] module.azure_container_registry.var.azure_container_registry_sku (expand)" -> "[root] module.azure_container_registry (expand)"
+		"[root] module.azure_container_registry.var.azure_container_registry_sku (expand)" -> "[root] var.azure_container_registry_sku"
+		"[root] module.azure_container_registry.var.azure_resource_group_location (expand)" -> "[root] module.azure_container_registry (expand)"
+		"[root] module.azure_container_registry.var.azure_resource_group_location (expand)" -> "[root] var.azure_resource_group_location"
+		"[root] module.azure_container_registry.var.azure_resource_group_name (expand)" -> "[root] module.azure_container_registry (expand)"
+		"[root] module.azure_container_registry.var.azure_resource_group_name (expand)" -> "[root] var.azure_resource_group_name"
+		"[root] module.azure_container_registry.var.tags (expand)" -> "[root] local.tags (expand)"
+		"[root] module.azure_container_registry.var.tags (expand)" -> "[root] module.azure_container_registry (expand)"
+		"[root] module.azure_cosmosdb (close)" -> "[root] module.azure_cosmosdb.output.azure_cosmosdb_account_name (expand)"
+		"[root] module.azure_cosmosdb.azurerm_cosmosdb_account.coe_azure_cosmosdb_account (expand)" -> "[root] module.azure_cosmosdb.var.azure_cosmosdb_account_capabilities_name_1 (expand)"
+		"[root] module.azure_cosmosdb.azurerm_cosmosdb_account.coe_azure_cosmosdb_account (expand)" -> "[root] module.azure_cosmosdb.var.azure_cosmosdb_account_capabilities_name_2 (expand)"
+		"[root] module.azure_cosmosdb.azurerm_cosmosdb_account.coe_azure_cosmosdb_account (expand)" -> "[root] module.azure_cosmosdb.var.azure_cosmosdb_account_capabilities_name_3 (expand)"
+		"[root] module.azure_cosmosdb.azurerm_cosmosdb_account.coe_azure_cosmosdb_account (expand)" -> "[root] module.azure_cosmosdb.var.azure_cosmosdb_account_capabilities_name_4 (expand)"
+		"[root] module.azure_cosmosdb.azurerm_cosmosdb_account.coe_azure_cosmosdb_account (expand)" -> "[root] module.azure_cosmosdb.var.azure_cosmosdb_account_consistency_level (expand)"
+		"[root] module.azure_cosmosdb.azurerm_cosmosdb_account.coe_azure_cosmosdb_account (expand)" -> "[root] module.azure_cosmosdb.var.azure_cosmosdb_account_enable_automatic_failover (expand)"
+		"[root] module.azure_cosmosdb.azurerm_cosmosdb_account.coe_azure_cosmosdb_account (expand)" -> "[root] module.azure_cosmosdb.var.azure_cosmosdb_account_geo_location_failover_priority_1 (expand)"
+		"[root] module.azure_cosmosdb.azurerm_cosmosdb_account.coe_azure_cosmosdb_account (expand)" -> "[root] module.azure_cosmosdb.var.azure_cosmosdb_account_geo_location_failover_priority_2 (expand)"
+		"[root] module.azure_cosmosdb.azurerm_cosmosdb_account.coe_azure_cosmosdb_account (expand)" -> "[root] module.azure_cosmosdb.var.azure_cosmosdb_account_geo_location_location_1 (expand)"
+		"[root] module.azure_cosmosdb.azurerm_cosmosdb_account.coe_azure_cosmosdb_account (expand)" -> "[root] module.azure_cosmosdb.var.azure_cosmosdb_account_geo_location_location_2 (expand)"
+		"[root] module.azure_cosmosdb.azurerm_cosmosdb_account.coe_azure_cosmosdb_account (expand)" -> "[root] module.azure_cosmosdb.var.azure_cosmosdb_account_kind (expand)"
+		"[root] module.azure_cosmosdb.azurerm_cosmosdb_account.coe_azure_cosmosdb_account (expand)" -> "[root] module.azure_cosmosdb.var.azure_cosmosdb_account_max_interval_in_seconds (expand)"
+		"[root] module.azure_cosmosdb.azurerm_cosmosdb_account.coe_azure_cosmosdb_account (expand)" -> "[root] module.azure_cosmosdb.var.azure_cosmosdb_account_max_staleness_prefix (expand)"
+		"[root] module.azure_cosmosdb.azurerm_cosmosdb_account.coe_azure_cosmosdb_account (expand)" -> "[root] module.azure_cosmosdb.var.azure_cosmosdb_account_name (expand)"
+		"[root] module.azure_cosmosdb.azurerm_cosmosdb_account.coe_azure_cosmosdb_account (expand)" -> "[root] module.azure_cosmosdb.var.azure_cosmosdb_account_offer_type (expand)"
+		"[root] module.azure_cosmosdb.azurerm_cosmosdb_account.coe_azure_cosmosdb_account (expand)" -> "[root] module.azure_cosmosdb.var.azure_resource_group_location (expand)"
+		"[root] module.azure_cosmosdb.azurerm_cosmosdb_account.coe_azure_cosmosdb_account (expand)" -> "[root] module.azure_cosmosdb.var.azure_resource_group_name (expand)"
+		"[root] module.azure_cosmosdb.azurerm_cosmosdb_account.coe_azure_cosmosdb_account (expand)" -> "[root] module.azure_cosmosdb.var.tags (expand)"
+		"[root] module.azure_cosmosdb.azurerm_cosmosdb_account.coe_azure_cosmosdb_account (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/azurerm\"]"
+		"[root] module.azure_cosmosdb.output.azure_cosmosdb_account_name (expand)" -> "[root] module.azure_cosmosdb.azurerm_cosmosdb_account.coe_azure_cosmosdb_account (expand)"
+		"[root] module.azure_cosmosdb.var.azure_cosmosdb_account_capabilities_name_1 (expand)" -> "[root] module.azure_cosmosdb (expand)"
+		"[root] module.azure_cosmosdb.var.azure_cosmosdb_account_capabilities_name_1 (expand)" -> "[root] var.azure_cosmosdb_account_capabilities_name_1"
+		"[root] module.azure_cosmosdb.var.azure_cosmosdb_account_capabilities_name_2 (expand)" -> "[root] module.azure_cosmosdb (expand)"
+		"[root] module.azure_cosmosdb.var.azure_cosmosdb_account_capabilities_name_2 (expand)" -> "[root] var.azure_cosmosdb_account_capabilities_name_2"
+		"[root] module.azure_cosmosdb.var.azure_cosmosdb_account_capabilities_name_3 (expand)" -> "[root] module.azure_cosmosdb (expand)"
+		"[root] module.azure_cosmosdb.var.azure_cosmosdb_account_capabilities_name_3 (expand)" -> "[root] var.azure_cosmosdb_account_capabilities_name_3"
+		"[root] module.azure_cosmosdb.var.azure_cosmosdb_account_capabilities_name_4 (expand)" -> "[root] module.azure_cosmosdb (expand)"
+		"[root] module.azure_cosmosdb.var.azure_cosmosdb_account_capabilities_name_4 (expand)" -> "[root] var.azure_cosmosdb_account_capabilities_name_4"
+		"[root] module.azure_cosmosdb.var.azure_cosmosdb_account_consistency_level (expand)" -> "[root] module.azure_cosmosdb (expand)"
+		"[root] module.azure_cosmosdb.var.azure_cosmosdb_account_consistency_level (expand)" -> "[root] var.azure_cosmosdb_account_consistency_level"
+		"[root] module.azure_cosmosdb.var.azure_cosmosdb_account_enable_automatic_failover (expand)" -> "[root] module.azure_cosmosdb (expand)"
+		"[root] module.azure_cosmosdb.var.azure_cosmosdb_account_enable_automatic_failover (expand)" -> "[root] var.azure_cosmosdb_account_enable_automatic_failover"
+		"[root] module.azure_cosmosdb.var.azure_cosmosdb_account_geo_location_failover_priority_1 (expand)" -> "[root] module.azure_cosmosdb (expand)"
+		"[root] module.azure_cosmosdb.var.azure_cosmosdb_account_geo_location_failover_priority_1 (expand)" -> "[root] var.azure_cosmosdb_account_geo_location_failover_priority_1"
+		"[root] module.azure_cosmosdb.var.azure_cosmosdb_account_geo_location_failover_priority_2 (expand)" -> "[root] module.azure_cosmosdb (expand)"
+		"[root] module.azure_cosmosdb.var.azure_cosmosdb_account_geo_location_failover_priority_2 (expand)" -> "[root] var.azure_cosmosdb_account_geo_location_failover_priority_2"
+		"[root] module.azure_cosmosdb.var.azure_cosmosdb_account_geo_location_location_1 (expand)" -> "[root] module.azure_cosmosdb (expand)"
+		"[root] module.azure_cosmosdb.var.azure_cosmosdb_account_geo_location_location_1 (expand)" -> "[root] var.azure_cosmosdb_account_geo_location_location_1"
+		"[root] module.azure_cosmosdb.var.azure_cosmosdb_account_geo_location_location_2 (expand)" -> "[root] module.azure_cosmosdb (expand)"
+		"[root] module.azure_cosmosdb.var.azure_cosmosdb_account_geo_location_location_2 (expand)" -> "[root] var.azure_cosmosdb_account_geo_location_location_2"
+		"[root] module.azure_cosmosdb.var.azure_cosmosdb_account_kind (expand)" -> "[root] module.azure_cosmosdb (expand)"
+		"[root] module.azure_cosmosdb.var.azure_cosmosdb_account_kind (expand)" -> "[root] var.azure_cosmosdb_account_kind"
+		"[root] module.azure_cosmosdb.var.azure_cosmosdb_account_max_interval_in_seconds (expand)" -> "[root] module.azure_cosmosdb (expand)"
+		"[root] module.azure_cosmosdb.var.azure_cosmosdb_account_max_interval_in_seconds (expand)" -> "[root] var.azure_cosmosdb_account_max_interval_in_seconds"
+		"[root] module.azure_cosmosdb.var.azure_cosmosdb_account_max_staleness_prefix (expand)" -> "[root] module.azure_cosmosdb (expand)"
+		"[root] module.azure_cosmosdb.var.azure_cosmosdb_account_max_staleness_prefix (expand)" -> "[root] var.azure_cosmosdb_account_max_staleness_prefix"
+		"[root] module.azure_cosmosdb.var.azure_cosmosdb_account_name (expand)" -> "[root] module.azure_cosmosdb (expand)"
+		"[root] module.azure_cosmosdb.var.azure_cosmosdb_account_name (expand)" -> "[root] var.azure_cosmosdb_account_name"
+		"[root] module.azure_cosmosdb.var.azure_cosmosdb_account_offer_type (expand)" -> "[root] module.azure_cosmosdb (expand)"
+		"[root] module.azure_cosmosdb.var.azure_cosmosdb_account_offer_type (expand)" -> "[root] var.azure_cosmosdb_account_offer_type"
+		"[root] module.azure_cosmosdb.var.azure_resource_group_location (expand)" -> "[root] module.azure_cosmosdb (expand)"
+		"[root] module.azure_cosmosdb.var.azure_resource_group_location (expand)" -> "[root] var.azure_resource_group_location"
+		"[root] module.azure_cosmosdb.var.azure_resource_group_name (expand)" -> "[root] module.azure_cosmosdb (expand)"
+		"[root] module.azure_cosmosdb.var.azure_resource_group_name (expand)" -> "[root] var.azure_resource_group_name"
+		"[root] module.azure_cosmosdb.var.tags (expand)" -> "[root] local.tags (expand)"
+		"[root] module.azure_cosmosdb.var.tags (expand)" -> "[root] module.azure_cosmosdb (expand)"
+		"[root] module.azure_key_vault (close)" -> "[root] module.azure_key_vault.azurerm_key_vault.coe_azure_key_vault (expand)"
+		"[root] module.azure_key_vault.azurerm_key_vault.coe_azure_key_vault (expand)" -> "[root] module.azure_key_vault.data.azurerm_client_config.current (expand)"
+		"[root] module.azure_key_vault.azurerm_key_vault.coe_azure_key_vault (expand)" -> "[root] module.azure_key_vault.var.azure_key_vault_access_policy_key_permissions (expand)"
+		"[root] module.azure_key_vault.azurerm_key_vault.coe_azure_key_vault (expand)" -> "[root] module.azure_key_vault.var.azure_key_vault_access_policy_secret_permissions (expand)"
+		"[root] module.azure_key_vault.azurerm_key_vault.coe_azure_key_vault (expand)" -> "[root] module.azure_key_vault.var.azure_key_vault_access_policy_storage_permissions (expand)"
+		"[root] module.azure_key_vault.azurerm_key_vault.coe_azure_key_vault (expand)" -> "[root] module.azure_key_vault.var.azure_key_vault_enabled_for_disk_encryption (expand)"
+		"[root] module.azure_key_vault.azurerm_key_vault.coe_azure_key_vault (expand)" -> "[root] module.azure_key_vault.var.azure_key_vault_name (expand)"
+		"[root] module.azure_key_vault.azurerm_key_vault.coe_azure_key_vault (expand)" -> "[root] module.azure_key_vault.var.azure_key_vault_purge_protection_enabled (expand)"
+		"[root] module.azure_key_vault.azurerm_key_vault.coe_azure_key_vault (expand)" -> "[root] module.azure_key_vault.var.azure_key_vault_sku_name (expand)"
+		"[root] module.azure_key_vault.azurerm_key_vault.coe_azure_key_vault (expand)" -> "[root] module.azure_key_vault.var.azure_key_vault_soft_delete_retention_days (expand)"
+		"[root] module.azure_key_vault.azurerm_key_vault.coe_azure_key_vault (expand)" -> "[root] module.azure_key_vault.var.azure_resource_group_location (expand)"
+		"[root] module.azure_key_vault.azurerm_key_vault.coe_azure_key_vault (expand)" -> "[root] module.azure_key_vault.var.azure_resource_group_name (expand)"
+		"[root] module.azure_key_vault.azurerm_key_vault.coe_azure_key_vault (expand)" -> "[root] module.azure_key_vault.var.tags (expand)"
+		"[root] module.azure_key_vault.data.azurerm_client_config.current (expand)" -> "[root] module.azure_key_vault (expand)"
+		"[root] module.azure_key_vault.data.azurerm_client_config.current (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/azurerm\"]"
+		"[root] module.azure_key_vault.var.azure_key_vault_access_policy_key_permissions (expand)" -> "[root] module.azure_key_vault (expand)"
+		"[root] module.azure_key_vault.var.azure_key_vault_access_policy_key_permissions (expand)" -> "[root] var.azure_key_vault_access_policy_key_permissions"
+		"[root] module.azure_key_vault.var.azure_key_vault_access_policy_secret_permissions (expand)" -> "[root] module.azure_key_vault (expand)"
+		"[root] module.azure_key_vault.var.azure_key_vault_access_policy_secret_permissions (expand)" -> "[root] var.azure_key_vault_access_policy_secret_permissions"
+		"[root] module.azure_key_vault.var.azure_key_vault_access_policy_storage_permissions (expand)" -> "[root] module.azure_key_vault (expand)"
+		"[root] module.azure_key_vault.var.azure_key_vault_access_policy_storage_permissions (expand)" -> "[root] var.azure_key_vault_access_policy_storage_permissions"
+		"[root] module.azure_key_vault.var.azure_key_vault_enabled_for_disk_encryption (expand)" -> "[root] module.azure_key_vault (expand)"
+		"[root] module.azure_key_vault.var.azure_key_vault_enabled_for_disk_encryption (expand)" -> "[root] var.azure_key_vault_enabled_for_disk_encryption"
+		"[root] module.azure_key_vault.var.azure_key_vault_name (expand)" -> "[root] module.azure_key_vault (expand)"
+		"[root] module.azure_key_vault.var.azure_key_vault_name (expand)" -> "[root] var.azure_key_vault_name"
+		"[root] module.azure_key_vault.var.azure_key_vault_purge_protection_enabled (expand)" -> "[root] module.azure_key_vault (expand)"
+		"[root] module.azure_key_vault.var.azure_key_vault_purge_protection_enabled (expand)" -> "[root] var.azure_key_vault_purge_protection_enabled"
+		"[root] module.azure_key_vault.var.azure_key_vault_sku_name (expand)" -> "[root] module.azure_key_vault (expand)"
+		"[root] module.azure_key_vault.var.azure_key_vault_sku_name (expand)" -> "[root] var.azure_key_vault_sku_name"
+		"[root] module.azure_key_vault.var.azure_key_vault_soft_delete_retention_days (expand)" -> "[root] module.azure_key_vault (expand)"
+		"[root] module.azure_key_vault.var.azure_key_vault_soft_delete_retention_days (expand)" -> "[root] var.azure_key_vault_soft_delete_retention_days"
+		"[root] module.azure_key_vault.var.azure_resource_group_location (expand)" -> "[root] module.azure_key_vault (expand)"
+		"[root] module.azure_key_vault.var.azure_resource_group_location (expand)" -> "[root] var.azure_resource_group_location"
+		"[root] module.azure_key_vault.var.azure_resource_group_name (expand)" -> "[root] module.azure_key_vault (expand)"
+		"[root] module.azure_key_vault.var.azure_resource_group_name (expand)" -> "[root] var.azure_resource_group_name"
+		"[root] module.azure_key_vault.var.tags (expand)" -> "[root] local.tags (expand)"
+		"[root] module.azure_key_vault.var.tags (expand)" -> "[root] module.azure_key_vault (expand)"
+		"[root] module.azure_kubernetes (close)" -> "[root] module.azure_kubernetes.azurerm_role_assignment.coe_azure_kubernetes_role_assignment (expand)"
+		"[root] module.azure_kubernetes (close)" -> "[root] module.azure_kubernetes.output.client_certificate (expand)"
+		"[root] module.azure_kubernetes (close)" -> "[root] module.azure_kubernetes.output.kube_config (expand)"
+		"[root] module.azure_kubernetes (expand)" -> "[root] module.azure_networking (close)"
+		"[root] module.azure_kubernetes.azurerm_kubernetes_cluster.coe_azure_kubernetes_cluster (expand)" -> "[root] module.azure_kubernetes.azurerm_private_dns_zone.coe_azure_kubernetes_private_dns_zone (expand)"
+		"[root] module.azure_kubernetes.azurerm_kubernetes_cluster.coe_azure_kubernetes_cluster (expand)" -> "[root] module.azure_kubernetes.var.azure_kubernetes_cluster_default_node_pool_enable_auto_scaling (expand)"
+		"[root] module.azure_kubernetes.azurerm_kubernetes_cluster.coe_azure_kubernetes_cluster (expand)" -> "[root] module.azure_kubernetes.var.azure_kubernetes_cluster_default_node_pool_max_count (expand)"
+		"[root] module.azure_kubernetes.azurerm_kubernetes_cluster.coe_azure_kubernetes_cluster (expand)" -> "[root] module.azure_kubernetes.var.azure_kubernetes_cluster_default_node_pool_min_count (expand)"
+		"[root] module.azure_kubernetes.azurerm_kubernetes_cluster.coe_azure_kubernetes_cluster (expand)" -> "[root] module.azure_kubernetes.var.azure_kubernetes_cluster_default_node_pool_name (expand)"
+		"[root] module.azure_kubernetes.azurerm_kubernetes_cluster.coe_azure_kubernetes_cluster (expand)" -> "[root] module.azure_kubernetes.var.azure_kubernetes_cluster_default_node_pool_node_count (expand)"
+		"[root] module.azure_kubernetes.azurerm_kubernetes_cluster.coe_azure_kubernetes_cluster (expand)" -> "[root] module.azure_kubernetes.var.azure_kubernetes_cluster_default_node_pool_type (expand)"
+		"[root] module.azure_kubernetes.azurerm_kubernetes_cluster.coe_azure_kubernetes_cluster (expand)" -> "[root] module.azure_kubernetes.var.azure_kubernetes_cluster_default_node_pool_vm_size (expand)"
+		"[root] module.azure_kubernetes.azurerm_kubernetes_cluster.coe_azure_kubernetes_cluster (expand)" -> "[root] module.azure_kubernetes.var.azure_kubernetes_cluster_default_node_pool_vnet_subnet_id (expand)"
+		"[root] module.azure_kubernetes.azurerm_kubernetes_cluster.coe_azure_kubernetes_cluster (expand)" -> "[root] module.azure_kubernetes.var.azure_kubernetes_cluster_dns_prefix (expand)"
+		"[root] module.azure_kubernetes.azurerm_kubernetes_cluster.coe_azure_kubernetes_cluster (expand)" -> "[root] module.azure_kubernetes.var.azure_kubernetes_cluster_identity_type (expand)"
+		"[root] module.azure_kubernetes.azurerm_kubernetes_cluster.coe_azure_kubernetes_cluster (expand)" -> "[root] module.azure_kubernetes.var.azure_kubernetes_cluster_name (expand)"
+		"[root] module.azure_kubernetes.azurerm_kubernetes_cluster.coe_azure_kubernetes_cluster (expand)" -> "[root] module.azure_kubernetes.var.azure_kubernetes_cluster_private_cluster_enabled (expand)"
+		"[root] module.azure_kubernetes.azurerm_kubernetes_cluster.coe_azure_kubernetes_cluster (expand)" -> "[root] module.azure_kubernetes.var.azure_resource_group_location (expand)"
+		"[root] module.azure_kubernetes.azurerm_kubernetes_cluster.coe_azure_kubernetes_cluster (expand)" -> "[root] module.azure_kubernetes.var.tags (expand)"
+		"[root] module.azure_kubernetes.azurerm_private_dns_zone.coe_azure_kubernetes_private_dns_zone (expand)" -> "[root] module.azure_kubernetes.var.azure_kubernetes_private_dns_zone_name (expand)"
+		"[root] module.azure_kubernetes.azurerm_private_dns_zone.coe_azure_kubernetes_private_dns_zone (expand)" -> "[root] module.azure_kubernetes.var.azure_resource_group_name (expand)"
+		"[root] module.azure_kubernetes.azurerm_role_assignment.coe_azure_kubernetes_role_assignment (expand)" -> "[root] module.azure_kubernetes.azurerm_private_dns_zone.coe_azure_kubernetes_private_dns_zone (expand)"
+		"[root] module.azure_kubernetes.azurerm_role_assignment.coe_azure_kubernetes_role_assignment (expand)" -> "[root] module.azure_kubernetes.azurerm_user_assigned_identity.coe_azure_kubernetes_user_assigned_identity (expand)"
+		"[root] module.azure_kubernetes.azurerm_role_assignment.coe_azure_kubernetes_role_assignment (expand)" -> "[root] module.azure_kubernetes.var.azure_kubernetes_role_assignment_role_definition_name (expand)"
+		"[root] module.azure_kubernetes.azurerm_user_assigned_identity.coe_azure_kubernetes_user_assigned_identity (expand)" -> "[root] module.azure_kubernetes.var.azure_kubernetes_user_assigned_identity_name (expand)"
+		"[root] module.azure_kubernetes.azurerm_user_assigned_identity.coe_azure_kubernetes_user_assigned_identity (expand)" -> "[root] module.azure_kubernetes.var.azure_resource_group_location (expand)"
+		"[root] module.azure_kubernetes.azurerm_user_assigned_identity.coe_azure_kubernetes_user_assigned_identity (expand)" -> "[root] module.azure_kubernetes.var.azure_resource_group_name (expand)"
+		"[root] module.azure_kubernetes.output.client_certificate (expand)" -> "[root] module.azure_kubernetes.azurerm_kubernetes_cluster.coe_azure_kubernetes_cluster (expand)"
+		"[root] module.azure_kubernetes.output.kube_config (expand)" -> "[root] module.azure_kubernetes.azurerm_kubernetes_cluster.coe_azure_kubernetes_cluster (expand)"
+		"[root] module.azure_kubernetes.var.azure_kubernetes_cluster_default_node_pool_enable_auto_scaling (expand)" -> "[root] module.azure_kubernetes (expand)"
+		"[root] module.azure_kubernetes.var.azure_kubernetes_cluster_default_node_pool_enable_auto_scaling (expand)" -> "[root] var.azure_kubernetes_cluster_default_node_pool_enable_auto_scaling"
+		"[root] module.azure_kubernetes.var.azure_kubernetes_cluster_default_node_pool_max_count (expand)" -> "[root] module.azure_kubernetes (expand)"
+		"[root] module.azure_kubernetes.var.azure_kubernetes_cluster_default_node_pool_max_count (expand)" -> "[root] var.azure_kubernetes_cluster_default_node_pool_max_count"
+		"[root] module.azure_kubernetes.var.azure_kubernetes_cluster_default_node_pool_min_count (expand)" -> "[root] module.azure_kubernetes (expand)"
+		"[root] module.azure_kubernetes.var.azure_kubernetes_cluster_default_node_pool_min_count (expand)" -> "[root] var.azure_kubernetes_cluster_default_node_pool_min_count"
+		"[root] module.azure_kubernetes.var.azure_kubernetes_cluster_default_node_pool_name (expand)" -> "[root] module.azure_kubernetes (expand)"
+		"[root] module.azure_kubernetes.var.azure_kubernetes_cluster_default_node_pool_name (expand)" -> "[root] var.azure_kubernetes_cluster_default_node_pool_name"
+		"[root] module.azure_kubernetes.var.azure_kubernetes_cluster_default_node_pool_node_count (expand)" -> "[root] module.azure_kubernetes (expand)"
+		"[root] module.azure_kubernetes.var.azure_kubernetes_cluster_default_node_pool_node_count (expand)" -> "[root] var.azure_kubernetes_cluster_default_node_pool_node_count"
+		"[root] module.azure_kubernetes.var.azure_kubernetes_cluster_default_node_pool_type (expand)" -> "[root] module.azure_kubernetes (expand)"
+		"[root] module.azure_kubernetes.var.azure_kubernetes_cluster_default_node_pool_type (expand)" -> "[root] var.azure_kubernetes_cluster_default_node_pool_type"
+		"[root] module.azure_kubernetes.var.azure_kubernetes_cluster_default_node_pool_vm_size (expand)" -> "[root] module.azure_kubernetes (expand)"
+		"[root] module.azure_kubernetes.var.azure_kubernetes_cluster_default_node_pool_vm_size (expand)" -> "[root] var.azure_kubernetes_cluster_default_node_pool_vm_size"
+		"[root] module.azure_kubernetes.var.azure_kubernetes_cluster_default_node_pool_vnet_subnet_id (expand)" -> "[root] module.azure_kubernetes (expand)"
+		"[root] module.azure_kubernetes.var.azure_kubernetes_cluster_dns_prefix (expand)" -> "[root] module.azure_kubernetes (expand)"
+		"[root] module.azure_kubernetes.var.azure_kubernetes_cluster_dns_prefix (expand)" -> "[root] var.azure_kubernetes_cluster_dns_prefix"
+		"[root] module.azure_kubernetes.var.azure_kubernetes_cluster_identity_type (expand)" -> "[root] module.azure_kubernetes (expand)"
+		"[root] module.azure_kubernetes.var.azure_kubernetes_cluster_identity_type (expand)" -> "[root] var.azure_kubernetes_cluster_identity_type"
+		"[root] module.azure_kubernetes.var.azure_kubernetes_cluster_name (expand)" -> "[root] module.azure_kubernetes (expand)"
+		"[root] module.azure_kubernetes.var.azure_kubernetes_cluster_name (expand)" -> "[root] var.azure_kubernetes_cluster_name"
+		"[root] module.azure_kubernetes.var.azure_kubernetes_cluster_private_cluster_enabled (expand)" -> "[root] module.azure_kubernetes (expand)"
+		"[root] module.azure_kubernetes.var.azure_kubernetes_cluster_private_cluster_enabled (expand)" -> "[root] var.azure_kubernetes_cluster_private_cluster_enabled"
+		"[root] module.azure_kubernetes.var.azure_kubernetes_private_dns_zone_name (expand)" -> "[root] module.azure_kubernetes (expand)"
+		"[root] module.azure_kubernetes.var.azure_kubernetes_private_dns_zone_name (expand)" -> "[root] var.azure_kubernetes_private_dns_zone_name"
+		"[root] module.azure_kubernetes.var.azure_kubernetes_role_assignment_role_definition_name (expand)" -> "[root] module.azure_kubernetes (expand)"
+		"[root] module.azure_kubernetes.var.azure_kubernetes_role_assignment_role_definition_name (expand)" -> "[root] var.azure_kubernetes_role_assignment_role_definition_name"
+		"[root] module.azure_kubernetes.var.azure_kubernetes_user_assigned_identity_name (expand)" -> "[root] module.azure_kubernetes (expand)"
+		"[root] module.azure_kubernetes.var.azure_kubernetes_user_assigned_identity_name (expand)" -> "[root] var.azure_kubernetes_user_assigned_identity_name"
+		"[root] module.azure_kubernetes.var.azure_resource_group_location (expand)" -> "[root] module.azure_kubernetes (expand)"
+		"[root] module.azure_kubernetes.var.azure_resource_group_name (expand)" -> "[root] module.azure_kubernetes (expand)"
+		"[root] module.azure_kubernetes.var.tags (expand)" -> "[root] module.azure_kubernetes (expand)"
+		"[root] module.azure_networking (close)" -> "[root] module.azure_networking.azurerm_nat_gateway_public_ip_association.coe_azure_nat_gateway_with_public_ip_association (expand)"
+		"[root] module.azure_networking (close)" -> "[root] module.azure_networking.azurerm_public_ip_prefix.coe_azure_public_ip_prefix (expand)"
+		"[root] module.azure_networking (close)" -> "[root] module.azure_networking.azurerm_subnet_nat_gateway_association.coe_azure_nat_gateway_with_subnet_association (expand)"
+		"[root] module.azure_networking (close)" -> "[root] module.azure_networking.azurerm_subnet_network_security_group_association.coe_azure_subnet_network_security_group_association (expand)"
+		"[root] module.azure_networking (close)" -> "[root] module.azure_networking.output.private_subnet_id (expand)"
+		"[root] module.azure_networking (close)" -> "[root] module.azure_networking.output.vnet_address_space (expand)"
+		"[root] module.azure_networking (close)" -> "[root] module.azure_networking.output.vnet_id (expand)"
+		"[root] module.azure_networking (close)" -> "[root] module.azure_networking.output.vnet_name (expand)"
+		"[root] module.azure_networking (expand)" -> "[root] module.azure_security_group (close)"
+		"[root] module.azure_networking.azurerm_nat_gateway.coe_azure_nat_gateway (expand)" -> "[root] module.azure_networking.var.azure_nat_gateway_idle_timeout_in_minutes (expand)"
+		"[root] module.azure_networking.azurerm_nat_gateway.coe_azure_nat_gateway (expand)" -> "[root] module.azure_networking.var.azure_nat_gateway_name (expand)"
+		"[root] module.azure_networking.azurerm_nat_gateway.coe_azure_nat_gateway (expand)" -> "[root] module.azure_networking.var.azure_nat_gateway_sku_name (expand)"
+		"[root] module.azure_networking.azurerm_nat_gateway.coe_azure_nat_gateway (expand)" -> "[root] module.azure_networking.var.azure_resource_group_location (expand)"
+		"[root] module.azure_networking.azurerm_nat_gateway.coe_azure_nat_gateway (expand)" -> "[root] module.azure_networking.var.azure_resource_group_name (expand)"
+		"[root] module.azure_networking.azurerm_nat_gateway.coe_azure_nat_gateway (expand)" -> "[root] module.azure_networking.var.tags (expand)"
+		"[root] module.azure_networking.azurerm_nat_gateway_public_ip_association.coe_azure_nat_gateway_with_public_ip_association (expand)" -> "[root] module.azure_networking.azurerm_nat_gateway.coe_azure_nat_gateway (expand)"
+		"[root] module.azure_networking.azurerm_nat_gateway_public_ip_association.coe_azure_nat_gateway_with_public_ip_association (expand)" -> "[root] module.azure_networking.azurerm_public_ip.coe_azure_public_ip (expand)"
+		"[root] module.azure_networking.azurerm_public_ip.coe_azure_public_ip (expand)" -> "[root] module.azure_networking.var.azure_public_ip_name (expand)"
+		"[root] module.azure_networking.azurerm_public_ip.coe_azure_public_ip (expand)" -> "[root] module.azure_networking.var.azure_public_ip_name_allocation_method (expand)"
+		"[root] module.azure_networking.azurerm_public_ip.coe_azure_public_ip (expand)" -> "[root] module.azure_networking.var.azure_public_ip_sku (expand)"
+		"[root] module.azure_networking.azurerm_public_ip.coe_azure_public_ip (expand)" -> "[root] module.azure_networking.var.azure_public_ip_sku_tier (expand)"
+		"[root] module.azure_networking.azurerm_public_ip.coe_azure_public_ip (expand)" -> "[root] module.azure_networking.var.azure_resource_group_location (expand)"
+		"[root] module.azure_networking.azurerm_public_ip.coe_azure_public_ip (expand)" -> "[root] module.azure_networking.var.azure_resource_group_name (expand)"
+		"[root] module.azure_networking.azurerm_public_ip.coe_azure_public_ip (expand)" -> "[root] module.azure_networking.var.tags (expand)"
+		"[root] module.azure_networking.azurerm_public_ip_prefix.coe_azure_public_ip_prefix (expand)" -> "[root] module.azure_networking.var.azure_public_ip_prefix_length (expand)"
+		"[root] module.azure_networking.azurerm_public_ip_prefix.coe_azure_public_ip_prefix (expand)" -> "[root] module.azure_networking.var.azure_public_ip_prefix_name (expand)"
+		"[root] module.azure_networking.azurerm_public_ip_prefix.coe_azure_public_ip_prefix (expand)" -> "[root] module.azure_networking.var.azure_resource_group_location (expand)"
+		"[root] module.azure_networking.azurerm_public_ip_prefix.coe_azure_public_ip_prefix (expand)" -> "[root] module.azure_networking.var.azure_resource_group_name (expand)"
+		"[root] module.azure_networking.azurerm_public_ip_prefix.coe_azure_public_ip_prefix (expand)" -> "[root] module.azure_networking.var.tags (expand)"
+		"[root] module.azure_networking.azurerm_subnet.coe_azure_private_subnet (expand)" -> "[root] module.azure_networking.azurerm_virtual_network.coe_azure_vnet (expand)"
+		"[root] module.azure_networking.azurerm_subnet.coe_azure_private_subnet (expand)" -> "[root] module.azure_networking.var.azure_vnet_private_subnet_address_prefixes (expand)"
+		"[root] module.azure_networking.azurerm_subnet.coe_azure_private_subnet (expand)" -> "[root] module.azure_networking.var.azure_vnet_private_subnet_name (expand)"
+		"[root] module.azure_networking.azurerm_subnet.coe_azure_public_subnet (expand)" -> "[root] module.azure_networking.azurerm_virtual_network.coe_azure_vnet (expand)"
+		"[root] module.azure_networking.azurerm_subnet.coe_azure_public_subnet (expand)" -> "[root] module.azure_networking.var.azure_vnet_public_subnet_address_prefixes (expand)"
+		"[root] module.azure_networking.azurerm_subnet.coe_azure_public_subnet (expand)" -> "[root] module.azure_networking.var.azure_vnet_public_subnet_name (expand)"
+		"[root] module.azure_networking.azurerm_subnet_nat_gateway_association.coe_azure_nat_gateway_with_subnet_association (expand)" -> "[root] module.azure_networking.azurerm_nat_gateway.coe_azure_nat_gateway (expand)"
+		"[root] module.azure_networking.azurerm_subnet_nat_gateway_association.coe_azure_nat_gateway_with_subnet_association (expand)" -> "[root] module.azure_networking.azurerm_subnet.coe_azure_public_subnet (expand)"
+		"[root] module.azure_networking.azurerm_subnet_network_security_group_association.coe_azure_subnet_network_security_group_association (expand)" -> "[root] module.azure_networking.azurerm_subnet.coe_azure_private_subnet (expand)"
+		"[root] module.azure_networking.azurerm_subnet_network_security_group_association.coe_azure_subnet_network_security_group_association (expand)" -> "[root] module.azure_networking.var.azure_vnet_private_subnet_security_group (expand)"
+		"[root] module.azure_networking.azurerm_virtual_network.coe_azure_vnet (expand)" -> "[root] module.azure_networking.var.azure_resource_group_location (expand)"
+		"[root] module.azure_networking.azurerm_virtual_network.coe_azure_vnet (expand)" -> "[root] module.azure_networking.var.azure_resource_group_name (expand)"
+		"[root] module.azure_networking.azurerm_virtual_network.coe_azure_vnet (expand)" -> "[root] module.azure_networking.var.azure_vnet_address_space (expand)"
+		"[root] module.azure_networking.azurerm_virtual_network.coe_azure_vnet (expand)" -> "[root] module.azure_networking.var.azure_vnet_dns_servers (expand)"
+		"[root] module.azure_networking.azurerm_virtual_network.coe_azure_vnet (expand)" -> "[root] module.azure_networking.var.azure_vnet_name (expand)"
+		"[root] module.azure_networking.azurerm_virtual_network.coe_azure_vnet (expand)" -> "[root] module.azure_networking.var.tags (expand)"
+		"[root] module.azure_networking.output.private_subnet_id (expand)" -> "[root] module.azure_networking.azurerm_subnet.coe_azure_private_subnet (expand)"
+		"[root] module.azure_networking.output.vnet_address_space (expand)" -> "[root] module.azure_networking.azurerm_virtual_network.coe_azure_vnet (expand)"
+		"[root] module.azure_networking.output.vnet_id (expand)" -> "[root] module.azure_networking.azurerm_virtual_network.coe_azure_vnet (expand)"
+		"[root] module.azure_networking.output.vnet_name (expand)" -> "[root] module.azure_networking.azurerm_virtual_network.coe_azure_vnet (expand)"
+		"[root] module.azure_networking.var.azure_nat_gateway_idle_timeout_in_minutes (expand)" -> "[root] module.azure_networking (expand)"
+		"[root] module.azure_networking.var.azure_nat_gateway_idle_timeout_in_minutes (expand)" -> "[root] var.azure_nat_gateway_idle_timeout_in_minutes"
+		"[root] module.azure_networking.var.azure_nat_gateway_name (expand)" -> "[root] module.azure_networking (expand)"
+		"[root] module.azure_networking.var.azure_nat_gateway_name (expand)" -> "[root] var.azure_nat_gateway_name"
+		"[root] module.azure_networking.var.azure_nat_gateway_sku_name (expand)" -> "[root] module.azure_networking (expand)"
+		"[root] module.azure_networking.var.azure_nat_gateway_sku_name (expand)" -> "[root] var.azure_nat_gateway_sku_name"
+		"[root] module.azure_networking.var.azure_public_ip_name (expand)" -> "[root] module.azure_networking (expand)"
+		"[root] module.azure_networking.var.azure_public_ip_name (expand)" -> "[root] var.azure_public_ip_name"
+		"[root] module.azure_networking.var.azure_public_ip_name_allocation_method (expand)" -> "[root] module.azure_networking (expand)"
+		"[root] module.azure_networking.var.azure_public_ip_name_allocation_method (expand)" -> "[root] var.azure_public_ip_name_allocation_method"
+		"[root] module.azure_networking.var.azure_public_ip_prefix_length (expand)" -> "[root] module.azure_networking (expand)"
+		"[root] module.azure_networking.var.azure_public_ip_prefix_length (expand)" -> "[root] var.azure_public_ip_prefix_length"
+		"[root] module.azure_networking.var.azure_public_ip_prefix_name (expand)" -> "[root] module.azure_networking (expand)"
+		"[root] module.azure_networking.var.azure_public_ip_prefix_name (expand)" -> "[root] var.azure_public_ip_prefix_name"
+		"[root] module.azure_networking.var.azure_public_ip_sku (expand)" -> "[root] module.azure_networking (expand)"
+		"[root] module.azure_networking.var.azure_public_ip_sku (expand)" -> "[root] var.azure_public_ip_sku"
+		"[root] module.azure_networking.var.azure_public_ip_sku_tier (expand)" -> "[root] module.azure_networking (expand)"
+		"[root] module.azure_networking.var.azure_public_ip_sku_tier (expand)" -> "[root] var.azure_public_ip_sku_tier"
+		"[root] module.azure_networking.var.azure_resource_group_location (expand)" -> "[root] module.azure_networking (expand)"
+		"[root] module.azure_networking.var.azure_resource_group_name (expand)" -> "[root] module.azure_networking (expand)"
+		"[root] module.azure_networking.var.azure_vnet_address_space (expand)" -> "[root] module.azure_networking (expand)"
+		"[root] module.azure_networking.var.azure_vnet_address_space (expand)" -> "[root] var.azure_vnet_address_space"
+		"[root] module.azure_networking.var.azure_vnet_dns_servers (expand)" -> "[root] module.azure_networking (expand)"
+		"[root] module.azure_networking.var.azure_vnet_dns_servers (expand)" -> "[root] var.azure_vnet_dns_servers"
+		"[root] module.azure_networking.var.azure_vnet_name (expand)" -> "[root] module.azure_networking (expand)"
+		"[root] module.azure_networking.var.azure_vnet_name (expand)" -> "[root] var.azure_vnet_name"
+		"[root] module.azure_networking.var.azure_vnet_private_subnet_address_prefixes (expand)" -> "[root] module.azure_networking (expand)"
+		"[root] module.azure_networking.var.azure_vnet_private_subnet_address_prefixes (expand)" -> "[root] var.azure_vnet_private_subnet_address_prefixes"
+		"[root] module.azure_networking.var.azure_vnet_private_subnet_name (expand)" -> "[root] module.azure_networking (expand)"
+		"[root] module.azure_networking.var.azure_vnet_private_subnet_name (expand)" -> "[root] var.azure_vnet_private_subnet_name"
+		"[root] module.azure_networking.var.azure_vnet_private_subnet_security_group (expand)" -> "[root] module.azure_networking (expand)"
+		"[root] module.azure_networking.var.azure_vnet_public_subnet_address_prefixes (expand)" -> "[root] module.azure_networking (expand)"
+		"[root] module.azure_networking.var.azure_vnet_public_subnet_address_prefixes (expand)" -> "[root] var.azure_vnet_public_subnet_address_prefixes"
+		"[root] module.azure_networking.var.azure_vnet_public_subnet_name (expand)" -> "[root] module.azure_networking (expand)"
+		"[root] module.azure_networking.var.azure_vnet_public_subnet_name (expand)" -> "[root] var.azure_vnet_public_subnet_name"
+		"[root] module.azure_networking.var.tags (expand)" -> "[root] module.azure_networking (expand)"
+		"[root] module.azure_security_group (close)" -> "[root] module.azure_security_group.output.nsg_id (expand)"
+		"[root] module.azure_security_group.azurerm_network_security_group.network_security_group (expand)" -> "[root] module.azure_security_group.var.azure_network_security_group_name (expand)"
+		"[root] module.azure_security_group.azurerm_network_security_group.network_security_group (expand)" -> "[root] module.azure_security_group.var.azure_network_security_group_name_nsg_rules_inbound (expand)"
+		"[root] module.azure_security_group.azurerm_network_security_group.network_security_group (expand)" -> "[root] module.azure_security_group.var.azure_network_security_group_name_nsg_rules_outbound (expand)"
+		"[root] module.azure_security_group.azurerm_network_security_group.network_security_group (expand)" -> "[root] module.azure_security_group.var.azure_resource_group_location (expand)"
+		"[root] module.azure_security_group.azurerm_network_security_group.network_security_group (expand)" -> "[root] module.azure_security_group.var.azure_resource_group_name (expand)"
+		"[root] module.azure_security_group.azurerm_network_security_group.network_security_group (expand)" -> "[root] module.azure_security_group.var.tags (expand)"
+		"[root] module.azure_security_group.azurerm_network_security_group.network_security_group (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/azurerm\"]"
+		"[root] module.azure_security_group.output.nsg_id (expand)" -> "[root] module.azure_security_group.azurerm_network_security_group.network_security_group (expand)"
+		"[root] module.azure_security_group.var.azure_network_security_group_name (expand)" -> "[root] module.azure_security_group (expand)"
+		"[root] module.azure_security_group.var.azure_network_security_group_name (expand)" -> "[root] var.azure_network_security_group_name"
+		"[root] module.azure_security_group.var.azure_network_security_group_name_nsg_rules_inbound (expand)" -> "[root] module.azure_security_group (expand)"
+		"[root] module.azure_security_group.var.azure_network_security_group_name_nsg_rules_inbound (expand)" -> "[root] var.azure_network_security_group_name_nsg_rules_inbound"
+		"[root] module.azure_security_group.var.azure_network_security_group_name_nsg_rules_outbound (expand)" -> "[root] module.azure_security_group (expand)"
+		"[root] module.azure_security_group.var.azure_network_security_group_name_nsg_rules_outbound (expand)" -> "[root] var.azure_network_security_group_name_nsg_rules_outbound"
+		"[root] module.azure_security_group.var.azure_resource_group_location (expand)" -> "[root] module.azure_security_group (expand)"
+		"[root] module.azure_security_group.var.azure_resource_group_location (expand)" -> "[root] var.azure_resource_group_location"
+		"[root] module.azure_security_group.var.azure_resource_group_name (expand)" -> "[root] module.azure_security_group (expand)"
+		"[root] module.azure_security_group.var.azure_resource_group_name (expand)" -> "[root] var.azure_resource_group_name"
+		"[root] module.azure_security_group.var.tags (expand)" -> "[root] local.tags (expand)"
+		"[root] module.azure_security_group.var.tags (expand)" -> "[root] module.azure_security_group (expand)"
+		"[root] module.azure_storage_account (close)" -> "[root] module.azure_storage_account.output.storage_account_id (expand)"
+		"[root] module.azure_storage_account (close)" -> "[root] module.azure_storage_account.output.storage_account_location (expand)"
+		"[root] module.azure_storage_account (close)" -> "[root] module.azure_storage_account.output.storage_account_name (expand)"
+		"[root] module.azure_storage_account.azurerm_storage_account.coe_azure_storage_account (expand)" -> "[root] module.azure_storage_account.var.azure_resource_group_location (expand)"
+		"[root] module.azure_storage_account.azurerm_storage_account.coe_azure_storage_account (expand)" -> "[root] module.azure_storage_account.var.azure_resource_group_name (expand)"
+		"[root] module.azure_storage_account.azurerm_storage_account.coe_azure_storage_account (expand)" -> "[root] module.azure_storage_account.var.azure_storage_access_tier (expand)"
+		"[root] module.azure_storage_account.azurerm_storage_account.coe_azure_storage_account (expand)" -> "[root] module.azure_storage_account.var.azure_storage_account_account_kind (expand)"
+		"[root] module.azure_storage_account.azurerm_storage_account.coe_azure_storage_account (expand)" -> "[root] module.azure_storage_account.var.azure_storage_account_blob_properties_delete_retention_policy_days (expand)"
+		"[root] module.azure_storage_account.azurerm_storage_account.coe_azure_storage_account (expand)" -> "[root] module.azure_storage_account.var.azure_storage_account_blob_properties_versioning_enabled (expand)"
+		"[root] module.azure_storage_account.azurerm_storage_account.coe_azure_storage_account (expand)" -> "[root] module.azure_storage_account.var.azure_storage_account_enable_https_traffic_only (expand)"
+		"[root] module.azure_storage_account.azurerm_storage_account.coe_azure_storage_account (expand)" -> "[root] module.azure_storage_account.var.azure_storage_account_min_tls_version (expand)"
+		"[root] module.azure_storage_account.azurerm_storage_account.coe_azure_storage_account (expand)" -> "[root] module.azure_storage_account.var.azure_storage_account_name (expand)"
+		"[root] module.azure_storage_account.azurerm_storage_account.coe_azure_storage_account (expand)" -> "[root] module.azure_storage_account.var.azure_storage_account_network_rules_default_action (expand)"
+		"[root] module.azure_storage_account.azurerm_storage_account.coe_azure_storage_account (expand)" -> "[root] module.azure_storage_account.var.azure_storage_account_network_rules_ip_rules (expand)"
+		"[root] module.azure_storage_account.azurerm_storage_account.coe_azure_storage_account (expand)" -> "[root] module.azure_storage_account.var.azure_storage_account_replication_type (expand)"
+		"[root] module.azure_storage_account.azurerm_storage_account.coe_azure_storage_account (expand)" -> "[root] module.azure_storage_account.var.azure_storage_account_tier (expand)"
+		"[root] module.azure_storage_account.azurerm_storage_account.coe_azure_storage_account (expand)" -> "[root] module.azure_storage_account.var.tags (expand)"
+		"[root] module.azure_storage_account.azurerm_storage_account.coe_azure_storage_account (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/azurerm\"]"
+		"[root] module.azure_storage_account.output.storage_account_id (expand)" -> "[root] module.azure_storage_account.azurerm_storage_account.coe_azure_storage_account (expand)"
+		"[root] module.azure_storage_account.output.storage_account_location (expand)" -> "[root] module.azure_storage_account.azurerm_storage_account.coe_azure_storage_account (expand)"
+		"[root] module.azure_storage_account.output.storage_account_name (expand)" -> "[root] module.azure_storage_account.azurerm_storage_account.coe_azure_storage_account (expand)"
+		"[root] module.azure_storage_account.var.azure_resource_group_location (expand)" -> "[root] module.azure_storage_account (expand)"
+		"[root] module.azure_storage_account.var.azure_resource_group_location (expand)" -> "[root] var.azure_resource_group_location"
+		"[root] module.azure_storage_account.var.azure_resource_group_name (expand)" -> "[root] module.azure_storage_account (expand)"
+		"[root] module.azure_storage_account.var.azure_resource_group_name (expand)" -> "[root] var.azure_resource_group_name"
+		"[root] module.azure_storage_account.var.azure_storage_access_tier (expand)" -> "[root] module.azure_storage_account (expand)"
+		"[root] module.azure_storage_account.var.azure_storage_access_tier (expand)" -> "[root] var.azure_storage_access_tier"
+		"[root] module.azure_storage_account.var.azure_storage_account_account_kind (expand)" -> "[root] module.azure_storage_account (expand)"
+		"[root] module.azure_storage_account.var.azure_storage_account_account_kind (expand)" -> "[root] var.azure_storage_account_account_kind"
+		"[root] module.azure_storage_account.var.azure_storage_account_blob_properties_delete_retention_policy_days (expand)" -> "[root] module.azure_storage_account (expand)"
+		"[root] module.azure_storage_account.var.azure_storage_account_blob_properties_delete_retention_policy_days (expand)" -> "[root] var.azure_storage_account_blob_properties_delete_retention_policy_days"
+		"[root] module.azure_storage_account.var.azure_storage_account_blob_properties_versioning_enabled (expand)" -> "[root] module.azure_storage_account (expand)"
+		"[root] module.azure_storage_account.var.azure_storage_account_blob_properties_versioning_enabled (expand)" -> "[root] var.azure_storage_account_blob_properties_versioning_enabled"
+		"[root] module.azure_storage_account.var.azure_storage_account_enable_https_traffic_only (expand)" -> "[root] module.azure_storage_account (expand)"
+		"[root] module.azure_storage_account.var.azure_storage_account_enable_https_traffic_only (expand)" -> "[root] var.azure_storage_account_enable_https_traffic_only"
+		"[root] module.azure_storage_account.var.azure_storage_account_min_tls_version (expand)" -> "[root] module.azure_storage_account (expand)"
+		"[root] module.azure_storage_account.var.azure_storage_account_min_tls_version (expand)" -> "[root] var.azure_storage_account_min_tls_version"
+		"[root] module.azure_storage_account.var.azure_storage_account_name (expand)" -> "[root] module.azure_storage_account (expand)"
+		"[root] module.azure_storage_account.var.azure_storage_account_name (expand)" -> "[root] var.azure_storage_account_name"
+		"[root] module.azure_storage_account.var.azure_storage_account_network_rules_default_action (expand)" -> "[root] module.azure_storage_account (expand)"
+		"[root] module.azure_storage_account.var.azure_storage_account_network_rules_default_action (expand)" -> "[root] var.azure_storage_account_network_rules_default_action"
+		"[root] module.azure_storage_account.var.azure_storage_account_network_rules_ip_rules (expand)" -> "[root] module.azure_storage_account (expand)"
+		"[root] module.azure_storage_account.var.azure_storage_account_network_rules_ip_rules (expand)" -> "[root] var.azure_storage_account_network_rules_ip_rules"
+		"[root] module.azure_storage_account.var.azure_storage_account_replication_type (expand)" -> "[root] module.azure_storage_account (expand)"
+		"[root] module.azure_storage_account.var.azure_storage_account_replication_type (expand)" -> "[root] var.azure_storage_account_replication_type"
+		"[root] module.azure_storage_account.var.azure_storage_account_tier (expand)" -> "[root] module.azure_storage_account (expand)"
+		"[root] module.azure_storage_account.var.azure_storage_account_tier (expand)" -> "[root] var.azure_storage_account_tier"
+		"[root] module.azure_storage_account.var.tags (expand)" -> "[root] local.tags (expand)"
+		"[root] module.azure_storage_account.var.tags (expand)" -> "[root] module.azure_storage_account (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/azurerm\"] (close)" -> "[root] module.azure_container_registry.azurerm_container_registry.coe_azure_container_registry (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/azurerm\"] (close)" -> "[root] module.azure_cosmosdb.azurerm_cosmosdb_account.coe_azure_cosmosdb_account (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/azurerm\"] (close)" -> "[root] module.azure_key_vault.azurerm_key_vault.coe_azure_key_vault (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/azurerm\"] (close)" -> "[root] module.azure_kubernetes.azurerm_kubernetes_cluster.coe_azure_kubernetes_cluster (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/azurerm\"] (close)" -> "[root] module.azure_kubernetes.azurerm_role_assignment.coe_azure_kubernetes_role_assignment (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/azurerm\"] (close)" -> "[root] module.azure_storage_account.azurerm_storage_account.coe_azure_storage_account (expand)"
+		"[root] root" -> "[root] module.azure_container_registry (close)"
+		"[root] root" -> "[root] module.azure_cosmosdb (close)"
+		"[root] root" -> "[root] module.azure_key_vault (close)"
+		"[root] root" -> "[root] module.azure_kubernetes (close)"
+		"[root] root" -> "[root] module.azure_storage_account (close)"
+		"[root] root" -> "[root] provider[\"registry.terraform.io/hashicorp/azurerm\"] (close)"
+		"[root] root" -> "[root] var.primary_region"
+		"[root] root" -> "[root] var.secondary_region"
+	}
+}
+
