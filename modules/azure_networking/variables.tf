@@ -48,11 +48,6 @@ variable "azure_vnet_public_subnet_address_prefixes" {
   type        = list(string)
 }
 
-#variable "azure_vnet_public_subnet_security_group" {
-#  description = "(Optional) The Network Security Group to associate with the subnet. (Referenced by id, ie. azurerm_network_security_group.example.id)"
-#  type        = string
-#}
-
 variable "azure_public_ip_name" {
   description = "(Required) Specifies the name of the Public IP. Changing this forces a new Public IP to be created."
   type        = string
@@ -68,19 +63,11 @@ variable "azure_public_ip_sku" {
   type        = string
 }
 
-#variable "azure_public_ip_zones" {
-#  description = "(Optional) A collection containing the availability zone to allocate the Public IP in. Changing this forces a new resource to be created."
-#  type        = list(string)
-#}
-
 variable "azure_public_ip_sku_tier" {
   description = "(Optional) The SKU Tier that should be used for the Public IP. Possible values are Regional and Global. Defaults to Regional. Changing this forces a new resource to be created."
   type        = string
 }
-#variable "azure_public_ip_version" {
-#  description = "(Optional) The IP Version to use, IPv6 or IPv4. Changing this forces a new resource to be created."
-#  type        = string
-#}
+
 variable "azure_public_ip_prefix_name" {
   description = "(Required) Specifies the name of the Public IP Prefix resource . Changing this forces a new resource to be created."
   type        = string
@@ -90,11 +77,6 @@ variable "azure_public_ip_prefix_length" {
   description = "(Required) Specifies the name of the Public IP Prefix resource . Changing this forces a new resource to be created."
   type        = number
 }
-
-#variable "azure_public_ip_prefix_zones" {
-#  description = "(Optional) Specifies a list of Availability Zones in which this Public IP Prefix should be located. Changing this forces a new Public IP Prefix to be created."
-#  type        = list(string)
-#}
 
 variable "azure_nat_gateway_name" {
   description = "(Required) Specifies the name of the NAT Gateway. Changing this forces a new resource to be created."
@@ -110,11 +92,6 @@ variable "azure_nat_gateway_idle_timeout_in_minutes" {
   description = "(Optional) The idle timeout which should be used in minutes. Defaults to 4."
   type        = number
 }
-
-#variable "azure_nat_gateway_zones" {
-#  description = "(Optional) Specifies a list of Availability Zones in which this NAT Gateway should be located. Changing this forces a new NAT Gateway to be created."
-#  type        = list(string)
-#}
 
 variable "tags" {
   description = "Tags to assign to the bucket."

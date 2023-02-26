@@ -16,5 +16,9 @@ output "vnet_address_space" {
 output "private_subnet_id" {
   description = "Vnet private subnet id"
   value       = azurerm_subnet.coe_azure_private_subnet.id
-  #value       = azurerm_virtual_network.coe_azure_vnet.id
+}
+
+output "public_subnet_id" {
+  description = "Vnet public subnet id"
+  value       = azurerm_subnet.coe_azure_public_subnet.id
 }

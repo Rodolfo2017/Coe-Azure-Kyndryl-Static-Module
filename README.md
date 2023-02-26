@@ -2,15 +2,14 @@
 
 ### [Building AZURE services with terraform]()
 
-### Prerequisite definitions
-1. Configure the domain in Route 53 and add the NS generated in the domain provider.
-2. Add the ZoneId generated from route53 to the variable hosted_zone_id.
+### Pre-requisite definitions
+1. Have a Resource group with privilege Owner.
 
 ### Init terraform
 terraform init
 
 ### Plan terraform by environmente
-terraform plan -var-file environment-vars/dev.tfvars -auto-approve
+terraform plan -var-file environment-vars/dev.tfvars
 
 ### Apply terraform by environment
 terraform apply -var-file environment-vars/dev.tfvars -auto-approve
@@ -30,3 +29,13 @@ terraform graph -type=plan | dot -Tsvg > graph.svg
 
 ### Terraform-docs
 terraform-docs markdown . > specs.md
+
+### Kubernetes Cree sin asignación de roles.
+az ad sp create-for-rbac
+
+{
+  "appId": "6fa04f34-4904-4620-8325-edc8d512380c",
+  "displayName": "azure-cli-2023-02-24-07-12-32",
+  "password": "kTQ8Q~ZN954q4WNLjy9hRLz~2nhIpCFrISoAIdx7",
+  "tenant": "d1c719f7-cc48-4f9f-83ec-f706a2a940fe"
+}
