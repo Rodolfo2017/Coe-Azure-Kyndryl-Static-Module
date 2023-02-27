@@ -25,7 +25,7 @@ terraform show -json plan.out > plan.json
 https://hieven.github.io/terraform-visual/plan-details
 
 ### Terraform GraphViz
-terraform graph -type=plan | dot -Tsvg > graph.svg
+terraform graph -type=plan > graph.svg
 
 ### Terraform-docs
 terraform-docs markdown . > specs.md
